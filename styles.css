@@ -1,3 +1,149 @@
+    /* Import fonts*/
+    
+    @font-face {
+        font-family: 'RHD900';
+        src: url('fonts/RedHatDisplayBlack.eot');
+        src: url('fonts/RedHatDisplayBlack.eot') format('embedded-opentype'), url('fonts/RedHatDisplayBlack.woff2') format('woff2'), url('fonts/RedHatDisplayBlack.woff') format('woff'), url('fonts/RedHatDisplayBlack.ttf') format('truetype'), url('fonts/RedHatDisplayBlack.svg#RedHatDisplayBlack') format('svg');
+    }
+    
+    @font-face {
+        font-family: 'RHD700';
+        src: url('fonts/RedHatDisplayBold.eot');
+        src: url('fonts/RedHatDisplayBold.eot') format('embedded-opentype'), url('fonts/RedHatDisplayBold.woff2') format('woff2'), url('fonts/RedHatDisplayBold.woff') format('woff'), url('fonts/RedHatDisplayBold.ttf') format('truetype'), url('fonts/RedHatDisplayBold.svg#RedHatDisplayBold') format('svg');
+    }
+    
+    @font-face {
+        font-family: 'RHD500';
+        src: url('fonts/RedHatDisplayMedium.eot');
+        src: url('fonts/RedHatDisplayMedium.eot') format('embedded-opentype'), url('fonts/RedHatDisplayMedium.woff2') format('woff2'), url('fonts/RedHatDisplayMedium.woff') format('woff'), url('fonts/RedHatDisplayMedium.ttf') format('truetype'), url('fonts/RedHatDisplayMedium.svg#RedHatDisplayMedium') format('svg');
+    }
+    /* Declaring global variables*/
+    
+     :root {
+        --primary-pale: hsl(225, 100%, 94%);
+        --primary-bright: hsl(245, 75%, 52%);
+        --very-pale: hsl(225, 100%, 98%);
+        --desaturated: hsl(224, 23%, 55%);
+        --dark-blue: hsl(223, 47%, 23%);
+        --font-size: 16px;
+    }
+    
+    * {
+        box-sizing: border-box;
+        font-family: 'RHD500';
+    }
+    
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-color: var(--primary-pale);
+        background-repeat: no-repeat;
+    }
+    
+    section {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 13px;
+        overflow: hidden;
+        box-shadow: 0 10px 8px hsl(225, 100%, 90%);
+        max-width: 90%;
+        max-height: 85%;
+    }
+    
+    header img {
+        max-width: 22rem;
+        max-height: 12rem;
+    }
+    
+    .summary {
+        text-align: center;
+        margin: 10% 13%;
+        line-height: 2;
+        font-size: .95rem;
+    }
+    
+    .summary h1 {
+        font-family: 'RHD900';
+        font-size: 1.6em;
+    }
+    
+    .plan {
+        background-color: var(--very-pale);
+        margin: 0 10%;
+        padding: 2.5% 0;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1rem;
+    }
+    
+    .annual {
+        line-height: .5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 10px;
+        text-align: left;
+    }
+    
+    .annual>img {
+        max-height: 3em;
+        max-width: auto;
+        padding: 1%;
+    }
+    
+    .price {
+        margin-left: 1.1rem;
+    }
+    
+    .change {
+        margin-right: 1rem;
+    }
+    
+    .button {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .proceed {
+        color: white;
+        background-color: var(--primary-bright);
+        margin: 10% 10% 1%;
+        padding: 5% 0;
+        box-shadow: 0 12px 5px var(--primary-pale);
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    
+    .cancel {
+        background-color: rgba(255, 255, 255, .1);
+        margin: 4% 10% 8%;
+        padding: 12px 0;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    
+    a {
+        color: var(--primary-bright);
+    }
+    
+    p,
+    .cancel {
+        color: var(--desaturated);
+    }
+    
     .attribution {
         font-size: 11px;
         text-align: center;
@@ -5,4 +151,60 @@
     
     .attribution a {
         color: hsl(228, 45%, 44%);
+    }
+    /* Hover States */
+    
+    .proceed:hover {
+        background-color: hsla(245, 75%, 52%, .7);
+    }
+    
+    .cancel:hover {
+        color: black;
+    }
+    
+    .change>a:hover {
+        text-decoration: none;
+        color: hsla(245, 75%, 52%, .7);
+    }
+    /* Desktop Media Query */
+    
+    @media all and (min-width:376px) {
+        body {
+            background-image: url(images/pattern-background-desktop.svg);
+            background-color: var(--primary-pale);
+            background-repeat: no-repeat;
+            background-size: 100% 1000%;
+        }
+        section {
+            max-width: 22.5rem;
+            margin: 1px;
+            max-height: 85%;
+        }
+        header img {
+            max-width: 100%;
+            max-height: 11rem;
+        }
+        .summary {
+            margin: 5% 10%;
+            font-size: .8rem;
+            line-height: 1.5;
+        }
+        .summary h1 {
+            font-size: 1.6em;
+            margin-bottom: 0;
+        }
+        .plan {
+            font-size: .8rem;
+            padding: 2% 0;
+        }
+        .proceed {
+            margin: 5% 10% 1%;
+            padding: 3% 0;
+            font-size: .8rem;
+        }
+        .cancel {
+            margin: 2% 10% 4%;
+            padding: 10px 0;
+            font-size: .8rem;
+        }
     }

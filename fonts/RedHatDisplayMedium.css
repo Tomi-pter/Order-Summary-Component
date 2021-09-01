@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'RedHatDisplayMedium';
+    src: url('fonts/RedHatDisplayMedium.eot');
+    src: url('fonts/RedHatDisplayMedium.eot') format('embedded-opentype'),
+         url('fonts/RedHatDisplayMedium.woff2') format('woff2'),
+         url('fonts/RedHatDisplayMedium.woff') format('woff'),
+         url('fonts/RedHatDisplayMedium.ttf') format('truetype'),
+         url('fonts/RedHatDisplayMedium.svg#RedHatDisplayMedium') format('svg');
+}
