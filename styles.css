@@ -168,7 +168,11 @@
     }
     /* Desktop Media Query */
     
+<<<<<<< HEAD
     @media all and (min-width:500px) {
+=======
+    @media all and (min-width:376px) {
+>>>>>>> 159686b (completed project)
         body {
             background-image: url(images/pattern-background-desktop.svg);
             background-color: var(--primary-pale);
