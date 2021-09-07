@@ -37,13 +37,13 @@
         background-image: url(images/pattern-background-mobile.svg);
         background-color: var(--primary-pale);
         background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     main {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        margin: auto;
         background-color: white;
         border-radius: 13px;
         overflow: hidden;
