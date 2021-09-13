@@ -37,9 +37,8 @@
         background-image: url(images/pattern-background-mobile.svg);
         background-color: var(--primary-pale);
         background-repeat: no-repeat;
-        display: grid;
-        grid-template-rows: 95vh;
-        grid-template-columns: 95vw;
+        display: flex;
+        min-height: 100vh;
     }
     
     main {
