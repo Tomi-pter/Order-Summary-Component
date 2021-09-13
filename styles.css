@@ -50,11 +50,12 @@
         overflow: hidden;
         box-shadow: 0 10px 8px hsl(225, 100%, 90%);
         max-width: 90%;
+        margin: auto;
     }
     
     img {
-        max-width: 22rem;
-        max-height: 12rem;
+        max-width: 100%;
+        max-height: auto;
     }
     
     .summary {
@@ -187,7 +188,7 @@
         }
         img {
             max-width: 100%;
-            max-height: 11rem;
+            max-height: auto;
         }
         .summary {
             font-size: .8rem;
