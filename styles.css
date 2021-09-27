@@ -105,10 +105,21 @@
         margin-right: 1rem;
     }
     
-    .button {
+    .change button {
+        border: none;
+        outline: none;
+        background-color: inherit;
+        color: var(--primary-bright);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    .links {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        text-align: center;
+        font-size: .8rem;
     }
     
     .proceed {
@@ -117,26 +128,23 @@
         margin: 1.2rem 2.2rem 1rem;
         padding: .8rem 0;
         box-shadow: 0 12px 10px hsla(245, 75%, 52%, .2);
-        border: none;
-        outline: none;
         border-radius: 8px;
         cursor: pointer;
-        font-size: .8rem;
+        text-decoration: none;
     }
     
     .cancel {
         background-color: rgba(255, 255, 255, .1);
+        text-decoration: none;
         margin: 0 2.2rem 1rem;
         padding: 12px 0;
-        border: none;
-        outline: none;
         border-radius: 8px;
         cursor: pointer;
-        font-size: .8rem;
     }
     
-    a {
-        color: var(--primary-bright);
+    h2 {
+        font-size: .8rem;
+        color: black;
     }
     
     p,
@@ -162,7 +170,7 @@
         color: black;
     }
     
-    .change>a:hover {
+    .change>button:hover {
         text-decoration: none;
         color: hsla(245, 75%, 52%, .7);
     }
